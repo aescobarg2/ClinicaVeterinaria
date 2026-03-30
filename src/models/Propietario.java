@@ -1,0 +1,41 @@
+package models;
+
+import java.util.ArrayList;
+
+public class Propietario {
+
+    private String nombre;
+    private ArrayList<Mascota> mascotas_asociadas;
+
+    //===============// Constructores //===============//
+
+
+    public Propietario() {
+    }
+
+    public Propietario(String nombre, ArrayList<Mascota> mascotas_asociadas) {
+        this.nombre = nombre;
+        this.mascotas_asociadas = mascotas_asociadas;
+    }
+
+    //===============// Set y get //===============//
+
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public ArrayList<Mascota> getMascotas_asociadas() {
+        return mascotas_asociadas;
+    }
+
+    public void setMascotas_asociadas(ArrayList<Mascota> mascotas_asociadas) {
+        this.mascotas_asociadas = mascotas_asociadas;
+    }
+
+
+}
