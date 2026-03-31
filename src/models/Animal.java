@@ -18,11 +18,4 @@ public class Animal{
     //===============// Set y get //===============//
 
 
-    public String getEspecie() {
-        return especie;
-    }
-
-    public void setEspecie(String especie) {
-        this.especie = especie;
-    }
 }

@@ -11,11 +11,12 @@ public class Propietario {
 
 
     public Propietario() {
+        ArrayList<Mascota> mascotas_asociadas = new ArrayList<>();
     }
 
-    public Propietario(String nombre, ArrayList<Mascota> mascotas_asociadas) {
+    public Propietario(String nombre) {
         this.nombre = nombre;
-        this.mascotas_asociadas = mascotas_asociadas;
+        this.mascotas_asociadas = new ArrayList<>();
     }
 
     //===============// Set y get //===============//
@@ -35,6 +36,13 @@ public class Propietario {
 
     public void setMascotas_asociadas(ArrayList<Mascota> mascotas_asociadas) {
         this.mascotas_asociadas = mascotas_asociadas;
+    }
+
+
+    //Metodo para agregar mascotas una a una
+    public void agregar_mascota(Mascota m){
+
+        this.mascotas_asociadas.add(m);
     }
 
 

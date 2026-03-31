@@ -10,11 +10,13 @@ public class Consulta {
     //===============// Constructores //===============//
 
     public Consulta() {
+
+        ArrayList<Medicamento> medicamentos_recetados = new ArrayList<>();
     }
 
-    public Consulta(int numero_consulta, ArrayList<Medicamento> medicamentos_recetados) {
+    public Consulta(int numero_consulta) {
         this.numero_consulta = numero_consulta;
-        this.medicamentos_recetados = medicamentos_recetados;
+        this.medicamentos_recetados = new ArrayList<>();
     }
 
     //===============// Set y get //===============//
