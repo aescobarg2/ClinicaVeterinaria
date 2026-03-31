@@ -11,12 +11,11 @@ public class Propietario {
 
 
     public Propietario() {
-        ArrayList<Mascota> mascotas_asociadas = new ArrayList<>();
     }
 
-    public Propietario(String nombre) {
+    public Propietario(String nombre, ArrayList<Mascota> mascotas_asociadas) {
         this.nombre = nombre;
-        this.mascotas_asociadas = new ArrayList<>();
+        this.mascotas_asociadas = mascotas_asociadas;
     }
 
     //===============// Set y get //===============//

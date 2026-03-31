@@ -41,9 +41,7 @@ public class Veterinario {
 
 
 
-    public void recetar(Mascota m, Medicamento med){
-
-        System.out.println("El veterinario " + this.nombre + " en la receta asigno el medicamento: "
-                + med.getNombre_medicamento() + " con la dosis " + med.getDosis() + " a la mascota " + m.getNombre());
+    public void recetar(Consulta consulta, Medicamento med){
+        consulta.agregarMedicamento(med);
     }
 }

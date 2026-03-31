@@ -5,20 +5,17 @@ public class Mascota extends Animal {
     private String nombre;
     private int edad;
     private float peso;
-    private Propietario propietario;
-
 
     //===============// Constructores //===============//
 
     public Mascota() {
     }
 
-    public Mascota(String especie, String nombre, int edad, float peso, Propietario propietario) {
+    public Mascota(String especie, String nombre, int edad, float peso) {
         super(especie);
         this.nombre = nombre;
         this.edad = edad;
         this.peso = peso;
-        this.propietario = propietario;
     }
 
     //===============// Set y get //===============//
@@ -48,11 +45,12 @@ public class Mascota extends Animal {
         this.peso = peso;
     }
 
-    public Propietario getPropietario() {
-        return propietario;
-    }
-
-    public void setPropietario(Propietario propietario) {
-        this.propietario = propietario;
+    @Override
+    public String toString() {
+        return "Mascota{" +
+                "nombre: '" + nombre + '\'' +
+                ", edad: " + edad +
+                ", peso: " + peso +
+                '}';
     }
 }

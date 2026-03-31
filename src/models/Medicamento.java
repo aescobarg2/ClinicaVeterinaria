@@ -34,4 +34,11 @@ public class Medicamento {
     public void setDosis(String dosis) {
         this.dosis = dosis;
     }
+
+    @Override
+    public String toString() {
+        return "Medicamento{" +
+                "nombre_medicamento='" + nombre_medicamento + '\'' +
+                '}';
+    }
 }
